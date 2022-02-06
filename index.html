@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN”
+“http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+
+<head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script   src="https://code.jquery.com/jquery-1.8.3.js"   integrity="sha256-dW19+sSjW7V1Q/Z3KD1saC6NcE5TUIhLJzJbrdKzxKc="   crossorigin="anonymous"></script>
+        <script src="jquery.zoomooz.min.js"></script> 
+        <script src="jquery.zoomooz.js"></script>
+        <script src="zoompan.js"></script>
+
+        <!-- following script from http://jsfiddle.net/dka30drt/6/ thanks to https://stackoverflow.com/users/3392959/sai -->
+      <script>$(document).ready(function () {
+        $.fn.texter = function () {
+            var letters = $(this).html().split(""),
+                text = "";
+    
+                $(this).html($(this).text().replace(/n/g,"<span class='e'>&#110;</span>"));
+        };
+    
+        $(".n").texter();
+    });</script>
+
+
+                
+        </head>
+
+
+
+
+     
+<body>
+
+        <div class="zoomViewport demo">
+            <div class="zoomContainer">
+                                    <div class="zoomTarget hwajin" data-closeclick='true' data-targetsize=".95"><img src="hwajinportrait.png" style="height:100px;"> <!-- 0.76 width/height ratio-->
+                                       <div class="bodytext aboutme">
+                                         </div>
+                                        </div>
+                                    
+                                        <div class="zoomTarget comp_edc" data-closeclick='true' data-targetsize="1"><img src="poster.png" style="height:120px;"><div class="bodytext comp_description">
+                                             </div>
+                                            </div>
+                                    
+
+
+                                    
+            </div>
+        </div>
+                                                    
+                                                   
+                                                    
+                                                    
+                                                    
+
+<!--POSTER-->
+
+                                                    <div class="zoomButton" data-type="prev" data-root=".demo">asdfasdfasdf</div>
+                                                    <div class="zoomButton" data-type="next" data-root=".demo"></div>
+
+                                                    <script>
+//https://www.w3schools.com/jquery/jquery_fade.asp
+//https://stackoverflow.com/users/5798798/the-codesee 's code here: http://jsfiddle.net/http://jsfiddle.net/C8FJP/363/C8FJP/363/
+
+                                                        
+//https://stackoverflow.com/questions/22675080/how-to-change-zindex-of-an-element-on-click-in-jquery 's code 
+
+                                                        $(".zoomTarget").click(function(e){
+                                                             $(".profile").css("z-index", -100);
+                                                        });
+                                                        
+
+                                                     
+                                                                        </script>
+        </body>
+    }
+
+
+
+
+       </html>
+
+                                        
+                            
+        

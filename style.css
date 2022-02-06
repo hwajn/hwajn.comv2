@@ -1,0 +1,103 @@
+@font-face {
+    font-family: minipax;
+    src: url("Minipax-Regular.eot");
+    src: url("Minipax-Regular.woff");
+    src: url("Minipax-Regular.woff2");
+}
+/*font from velvetyne.fr */
+
+@font-face {
+    font-family: ibm;
+    src: url("IBMPlexSerif-Regular.otf");
+}
+
+@font-face {
+    font-family: anthony;
+    src: url("Anthony.otf");
+}
+
+@media only screen and (max-width: 3000px){
+html {
+    position:relative;
+    min-width:1000px;}
+
+body {
+    font-family:ibm;
+    margin:0;
+    min-width:1000px;
+    }
+    
+.zoomButton {position:sticky;bottom:10px;width:100px;background-color:yellow;}
+
+.zoomTarget {
+    width:200px;
+    height:fit-content;
+    display:flex;
+    background-color:none;
+    border: 0px solid blue;
+}
+
+.zoomTarget > div:nth-child(3) { flex: 1; }
+
+.zoomViewport {
+    width:100vw;
+    height:100vh;
+    min-width:1000px;
+    overflow-x:scroll;
+    background-color:none;
+    border: 20px solid transparent;}
+
+.zoomContainer {
+    height:100vh;
+    width:100vw;
+    min-width:1000px;
+    background-image:url("background-name.png");
+    background-size:40%;
+    background-position-x: center;
+    background-position-y:calc(50% - 50px);
+    background-repeat: no-repeat;
+    display:inline-flex;
+    }
+    
+.bodytext {
+    
+    width:100px;
+    height:100%;
+    position:relative;
+    top:37px;
+    font-family:ibm;
+    color:black;
+    background-color:red;
+    word-wrap:normal;
+    -webkit-text-fill-color:black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: transparent;
+ 
+}
+.comp_description   {
+
+}
+
+.hwajin {
+    background-color:none;
+    font-size: 50pt;
+    font-family:anthony;
+    color:black;
+-webkit-text-fill-color: royalblue; /* Will override color (regardless of order) */
+-webkit-text-stroke-width: .5px;
+-webkit-text-stroke-color: black;
+}
+
+.aboutme, .comp_description {
+    font-size:.25vh;
+    line-height:.5vh;
+    letter-spacing:.02vh;
+    overflow-y:scroll;
+    padding-left:10px;
+}
+.aboutme {
+    margin-top:-5px;
+}
+
+.comp_edc {
+    background-color:transparent;}
